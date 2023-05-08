@@ -8,10 +8,10 @@
     <h2>Información de Personas</h2>
     <hr/>
     <div id="pestanias">
-    <p><b>Nombre:</b><span id="nombre"><span></p>
-    <p><b>Apellido:</b><span id="apellido"><span></p>
-    <p><b>Tarjeta:</b><span id="tarjeta"><span></p>
-    <p><b>Lenguaje:</b><span id="lenguaje"><span></p>
+    <p><b>Nombre:</b> <span id="nombre"><span></p>
+    <p><b>Apellido:</b> <span id="apellido"><span></p>
+    <p><b>Tarjeta:</b> <span id="tarjeta"><span></p>
+    <p><b>Lenguaje:</b> <span id="lenguaje"><span></p>
     </div>
 
     <input type="hidden" id="id_persona" value="{{id}}">
@@ -22,7 +22,7 @@
 <script>
 $(document).ready(function() {
   var id_persona = $("#id_persona").val(); 
-  var url = 'http://127.0.0.1:5984/demo001/_design/tercero/_view/persona?include_docs=true&key="'+id_persona+'"';
+  var url = 'http://127.0.0.1:5984/demo001/_design/tercero/_view/vista003?include_docs=true&key="'+id_persona+'"';
   console.log(id_persona);
   console.log(url);
   $.ajax({
